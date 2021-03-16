@@ -1,19 +1,467 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Noah Makmel">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>NoLabeL</title>
 </head>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <body>
-	<h1>Howdy</h1>
+
+	<!-- ********** | NAVBAR | ********** -->
+	<div class="nav_main">
+		<nav class="nav_main_navbar">
+			<div class="nav_left_area">
+				<ul>
+					<li class="nav_left_area_li">
+						<a onmouseover="displayShop()" href="#">Shop</a>
+					</li>
+					<li class="nav_left_area_li">
+						<a href="#">Stores</a>
+					</li>
+					<li class="nav_left_area_li">
+						<a href="#">Factories</a>
+					</li>
+					<li class="nav_left_area_li">
+						<a href="#">About us</a>
+					</li>
+					<li class="nav_left_area_li">
+						<a href="#">Book an Appointment</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_center_h">
+				<h3>NO<span>LABEL</span></h3>
+			</div>
+			<div class="nav_right_area">
+				<ul>
+					<li class="nav_right_area_li">
+						<a href="#"><i class="fa fa-user-o" aria-hidden="true"> </i><span> Account</span></a>
+					</li>
+					<li class="nav_right_area_li">
+						<a href="#"><i class="fa fa-search" aria-hidden="true"></i> <span> Search</span></a>
+					</li>
+					<li class="nav_right_area_li">
+						<a href="#"><i class="fa fa-heart" aria-hidden="true"></i> <span> 0</span></a>
+					</li>
+					<li class="nav_right_area_li">
+						<button class="nav_right_area_li_button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<span>0</span></button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ********** | NAVBAR SHOP SECTION | ********** -->
+		<div onmouseover="displayShop()" onmouseout="displayShopNone()" id="displaynone">
+			<div class="navbar_shop">
+				<div class="shop_nav extra">
+					<ul>
+						<li class="shop_nav_li"><a href="#"> New Arivals </a></li>
+						<li class="shop_nav_li"><a href="#"> Most Popular</a></li>
+						<li class="shop_nav_li"><a href="#"> Spring</a></li>
+						<li class="shop_nav_li"><a href="#"> Gift Cards</a></li>
+						<li class="shop_nav_li"><a href="#"> Back in Stock</a></li>
+					</ul>
+				</div>
+
+				<div class="shop_nav">
+					<ul>
+						<li class="shop_nav_li"><a href="#"> Knitwear </a></li>
+						<li class="shop_nav_li"><a href="#"> Shirts</a></li>
+						<li class="shop_nav_li"><a href="#"> T-shirts</a></li>
+						<li class="shop_nav_li"><a href="#">Sweaters</a></li>
+						<li class="shop_nav_li"><a href="#"> Shoes</a> </li>
+						<li class="shop_nav_li"><a href="#">Leisure Wear</a> </li>
+						<li class="shop_nav_li"><a href="#">Pants</a></li>
+					</ul>
+				</div>
+
+				<div class="shop_nav">
+					<ul>
+						<li class="shop_nav_li"><a href="#"> Shorts </a></li>
+						<li class="shop_nav_li"><a href="#"> Swimwear</a></li>
+						<li class="shop_nav_li"><a href="#"> Polo Shirts</a></li>
+						<li class="shop_nav_li"><a href="#"> Outerwear</a></li>
+						<li class="shop_nav_li"><a href="#">Jackets</a></li>
+						<li class="shop_nav_li"><a href="#">Overshirts</a></li>
+						<li class="shop_nav_li"><a href="#">Accessories</a></li>
+					</ul>
+				</div>
+				<div class="shop_nav">
+					<ul>
+						<li class="shop_nav_li"><img width="150px" src="images/jpg/bgImage.jpg" alt="Men in blouse"></li>
+					</ul>
+				</div>
+				<div class="shop_nav">
+					<ul>
+						<li class="shop_nav_li"><img width="150px" src="images/jpg/bgImage.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- ********** | MOBILE NAVBAR | ********** -->
+
+		<nav class="nav_main_mob_navbar">
+			<div class="nav_left_area">
+				<ul>
+					<li id="open_btn" class="nav_left_area_li"><span class="position_abc" onclick="openNav()">&#9776;</span></li>
+					<li id="close_btn" class="nav_left_area_li"><a class="closebtn" onclick="closeNav()">&times;</a>
+					</li>
+					<li class="nav_left_area_li"><i class="fa fa-search" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+
+			<div class="nav_center_h">
+				<h3>NO<span>LABEL</span></h3>
+			</div>
+
+			<div class="nav_right_area">
+				<ul>
+					<li class="nav_right_area_li">
+						<button class="nav_right_area_li_button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<span>0</span></button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ********** | MOBILE NAVBAR | ********** -->
+
+		<div id="shop_mob" class="short_mob">
+			<div>
+				<ul>
+					<li class="shop_nav_li_2">
+						Shop
+					</li>
+					<li class="shop_nav_li_2"><a href="#"> New Arivals </a></li>
+					<li class="shop_nav_li_2"><a href="#"> Most Popular</a></li>
+					<li class="shop_nav_li_2"><a href="#"> Spring</a></li>
+					<li class="shop_nav_li_2"><a href="#"> Gift Cards</a></li>
+					<li class="shop_nav_li_2"><a href="#"> Back in Stock</a></li>
+				</ul>
+			</div>
+			<div class="navbar_shop_mob">
+				<div>
+					<ul>
+						<li class="shop_nav_li_2"><a href="#">Knitwear </a></li>
+						<li class="shop_nav_li_2"><a href="#">Shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">T-shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Sweaters</a></li>
+						<li class="shop_nav_li_2"><a href="#">Shoes</a></li>
+						<li class="shop_nav_li_2"><a href="#">Leisure</a></li>
+						<li class="shop_nav_li_2"><a href="#">Pants</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li class="shop_nav_li_2"><a href="#">Shorts </a></li>
+						<li class="shop_nav_li_2"><a href="#">Swimwear</a></li>
+						<li class="shop_nav_li_2"><a href="#">Shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Outerwear</a></li>
+						<li class="shop_nav_li_2"><a href="#">Jackets</a></li>
+						<li class="shop_nav_li_2"><a href="#">Overshirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Accessories</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="about_stories">
+				<p>About Us</p>
+				<br>
+				<hr style="opacity: 50%; margin-left: -20px; width: 300px;"> */ Inline css weghalen
+				<br>
+				<p>Stores</p>
+				<br>
+				<hr style="opacity: 50%; margin-left: -20px; width: 300px;">
+			</div>
+
+			<div>
+				<ul>
+					<li class="shop_nav_li_2">
+						<a href="#"><i class="fa fa-user-o" aria-hidden="true"> </i><span> Account</span></a>
+					</li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Login</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Manage Acoount</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Create Account</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<ul>
+					<li class="shop_nav_li_2"><a href="#">Info</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Contact</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Return & Refund Policy</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Shipping Information</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">FAQ</a></li>
+					<li class="shop_nav_li_2 clr_blk"><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<br><br>
+		</div>
+	</div>
+
+	<!-- ********** | TEXT SLIDER | ********** -->
+
+	<div id="slider">
+		<ul class="slides">
+			<li class="slide slide1">Delivery in 1-3 working days</li>
+			<li class="slide slide2">slide2</li>
+			<li class="slide slide3">slide3</li>
+			<li class="slide slide4">slide4</li>
+			<li class="slide slide5">slide5</li>
+			<li class="slide slide1">Delivery in 1-3 working days</li>
+		</ul>
+	</div>
+
+	<!-- ********** | NEW ARRIVALS SECTION | ********** -->
+
+	<section class="bgImage">
+		<div class="headerHeading">
+			<h1>
+				We're ready for<br>
+				Spring<br>
+			</h1>
+			<p>New arrivals</p>
+			<br><br>
+			<button class="new_ariival_btn">New Arrivals</button>
+		</div>
+	</section>
+
+
+	<!-- ********** | NEW ARRIVALS SECTION 01 | ********** -->
+
+	<div class="main_show">
+		<center>
+			<h1>Have you seen our new arrivals?</h1>
+		</center>
+		<div class="newshow">
+			<div>
+				<img width="500px" src="new/img02.jpg" class="" alt="">
+				<center>
+					<div class="newshow_text">
+						<h4>Step into Ghost</h4>
+						<p>Something new for you</p>
+						<button class="">Ghost Suede-Mesh in beige</button>
+					</div>
+				</center>
+			</div>
+			<div>
+				<img width="500px" src="new/asset 8.jpeg" class="" alt="">
+				<center>
+					<div class="newshow_text">
+						<h4>It's Sweater Weather</h4>
+						<p>Something new for you</p>
+						<button class="">Tromsø Jersey Cotton in
+							off-white</button>
+					</div>
+				</center>
+			</div>
+		</div>
+
+		<div class="extra_img">
+			<img width="100%" src="new/img03.jpg" alt="">
+		</div>
+
+		<!-- ********** | PRODUCT SECTION | ********** -->
+
+		<div class="product_sec">
+			<div class="main_card">
+				<div>
+					<img onMouseover="src='new/img06.jpg'" onMouseout="src='new/img04.jpg'" width="100%" height="300px" src="new/img04.jpg" alt="">
+				</div>
+				<div>
+					<p>
+						Felix Twill Cotton in navy
+						<span style="margin-left: 10px; color: #949aa1;">€ 69.00</span>
+					</p>
+				</div>
+			</div>
+			<div class="main_card">
+				<div>
+					<img onMouseover="src='new/img08.jpg'" onMouseout="src='new/img07.jpg'" width="100%" height="300px" src="new/img07.jpg" alt="">
+				</div>
+				<div>
+					<p>
+						Felix Twill Cotton in navy
+						<span style="margin-left: 10px; color: #949aa1;">€ 69.00</span>
+					</p>
+				</div>
+			</div>
+			<div class="main_card">
+				<div>
+					<img onMouseover="src='new/img10.jpg'" onMouseout="src='new/img09.jpg'" width="100%" height="300px" src="new/img10.jpg" alt="">
+				</div>
+				<div>
+					<p>
+						Felix Twill Cotton in navy
+						<span style="margin-left: 10px; color: #949aa1;">€ 69.00</span>
+					</p>
+				</div>
+			</div>
+
+			<!-- ********** | SUBSCRIBE SECTION | ********** -->
+
+			<section class="subScriberBgImage">
+				<center>
+					<div class="subScriberSecHeadings">
+						<h2>Get 10% off your next purchase</h2>
+						<p>Subscribe to our newsletter and good things will come your way</p>
+						<!-- email input -->
+						<div class="custum">
+							<input type="text" class="cls_input rounded-0" placeholder="Email" aria-describedby="basic-addon2">
+							<button type="submit" class="join_btn">Join</button>
+						</div>
+					</div>
+				</center>
+			</section>
+		</div>
+	</div>
+
+
+	<!-- <section class=""> -->
+	<div class="for_setting_pu">
+		<div class="shop_arrivals_main">
+			<h4>Shop</h4>
+			<div class="setting_li">
+				<div class="setting_li_div">
+					<ul>
+						<li class="shop_nav_li_2"><a href="#"> New Arivals </a></li>
+						<li class="shop_nav_li_2"><a href="#"> Most Popular</a></li>
+						<li class="shop_nav_li_2"><a href="#"> Spring</a></li>
+						<li class="shop_nav_li_2"><a href="#"> Gift Cards</a></li>
+						<li class="shop_nav_li_2"><a href="#"> Back in Stock</a></li>
+					</ul>
+				</div>
+				<div class="setting_li_div">
+					<ul>
+						<li class="shop_nav_li_2"><a href="#">Knitwear </a></li>
+						<li class="shop_nav_li_2"><a href="#">Shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">T-shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Sweaters</a></li>
+						<li class="shop_nav_li_2"><a href="#">Shoes</a></li>
+						<li class="shop_nav_li_2"><a href="#">Leisure</a></li>
+						<li class="shop_nav_li_2"><a href="#">Pants</a></li>
+					</ul>
+				</div>
+				<div class="setting_li_div">
+					<ul>
+						<li class="shop_nav_li_2"><a href="#">Shoets </a></li>
+						<li class="shop_nav_li_2"><a href="#">Swimwear</a></li>
+						<li class="shop_nav_li_2"><a href="#">Shirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Outerwear</a></li>
+						<li class="shop_nav_li_2"><a href="#">Jackets</a></li>
+						<li class="shop_nav_li_2"><a href="#">Overshirts</a></li>
+						<li class="shop_nav_li_2"><a href="#">Accessories</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pic_arrivals_main">
+			<h4 class="new_items_h4">Newest Items</h4>
+			<div class="pic_arrivals">
+				<div class="product-grid9">
+					<div class="product-image9">
+						<a style="width: 200px;" href="#">
+							<img class="pic-1" src="new/img12.jpg">
+							<img class="pic-2" src="new/img13.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="product-grid9">
+					<div class="product-image9">
+						<a style="width: 200px;" href="#">
+							<img class="pic-1" src="new/img14.jpg">
+							<img class="pic-2" src="new/img15.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="product-grid9">
+					<div class="product-image9">
+						<a style="width: 200px;" href="#">
+							<img class="pic-1" src="new/img16.jpg">
+							<img class="pic-2" src="new/img17.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ********** | FOOTER | ********** -->
+
+	<section class="bg_light">
+		<div class="footer_main">
+			<div class="footer_2_div">
+				<div class="fooot">
+					<div class="captionedImg">
+						<img width="150px" src="images/jpg/CS_Tom.jpg" class="img-fluid" alt="">
+					</div>
+				</div>
+				<div class="userInfoBox">
+					<h5>Customer Service</h5>
+					<p>OFFLINE</p>
+					<span style="font-size: 14px; color: #949aa1;">+31 (0) 20 261 37 69</span>
+					<span style="font-size: 14px; color: #949aa1;">support@nolabel.nl</span>
+				</div>
+			</div>
+			<div class=" linkBox">
+				<h4>Info</h4>
+				<ul>
+					<li>Contact</li>
+					<li>Return & Refund Policy</li>
+					<li>Shipping Information</li>
+					<li>FAQ</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+			<div class=" linkBox">
+				<h4>About Us</h4>
+				<ul>
+					<li>About us</li>
+					<li>Our Story</li>
+					<li>Visit us</li>
+					<li>Factories</li>
+					<li>Pricing philosophy</li>
+				</ul>
+			</div>
+			<div class=" linkBox">
+				<h4>Connect With Us</h4>
+				<ul>
+					<li><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</li>
+					<li><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</li>
+				</ul>
+
+			</div>
+			<div class=" linkBox">
+				<h4>Account</h4>
+				<ul>
+					<li>Manage Account</li>
+					<li>Order History</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="last_foot">
+		<div class="last_foot_div">
+			<span>NO<strong>LABEL</strong></span>
+			<span class="ml-5">© 2021. No Label</span>
+		</div>
+		<div class="right_Foot">
+			<span><a href="#">Cookies</a></span>
+			<span><a href="#">Privacy Statement</a></span>
+			<span><a href="#">Terms & Conditions</a></span>
+		</div>
+	</div>
+
 	<script src="scripts/script.js"></script>
 </body>
-	
+
 </html>

@@ -1,0 +1,417 @@
+/* ********** | MAIN | ********** */
+.shown_side {
+    display: flex;
+}
+
+/* ********** | Extra Nav | *********** */
+.list_extra_nav {
+    flex: 1
+}
+
+.imagesshown {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex: 4
+}
+
+.imagesshown_div2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesshown_div2 img {
+    width: 45%;
+    margin: 10px;
+}
+
+
+
+
+/* ********** | Mobile Slider | ********** */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mobile_slider {
+    display: none;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: all .3s;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.mySlides {
+    -webkit-animation-name: mySlides;
+    -webkit-animation-duration: 1.5s;
+    animation-name: mySlides;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mySlides {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes mySlides {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .width_pro {
+        width: 400px;
+    }
+
+    .hideby1100 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .list_extra_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .imagesshown {
+        display: none;
+    }
+
+    .mobile_slider {
+        display: block;
+    }
+
+    .shown_side {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ********** | PRODUCT DESIGN & COLORS | ********** */
+
+.main_design_div {
+    flex: 2
+}
+
+.design_head {
+    border-bottom: 1px solid #f0f1f1;
+}
+
+.design_head h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.design_head p {
+    color: #949aa1;
+}
+
+
+.design_btn span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+
+.design_btn p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #949aa1;
+    margin-bottom: 10px;
+}
+
+.design_btn button {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+.design_btn button:hover {
+    border: 1px solid #666;
+}
+
+
+
+.gray {
+    background-color: gray;
+}
+
+.green {
+    background-color: chartreuse;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.cyan {
+    background-color: maroon;
+}
+
+.blueviolet {
+    background-color: blueviolet;
+}
+
+.red {
+    background-color: red;
+}
+
+.fuch {
+    background-color: fuchsia;
+}
+
+.purpal {
+    background-color: purple;
+}
+
+.char {
+    background-color: chartreuse;
+}
+
+
+
+
+.size_main {
+    margin-top: 30px;
+}
+
+.size_main p {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.size_main span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #949aa1;
+    margin-bottom: 10px;
+}
+
+
+.size_btn button,
+.Heart_btn {
+    margin-right: 10px;
+    background-color: white;
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+    border: 0.5px solid #f0f1f1;
+    color: #949aa1;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.size_btn button:hover,
+.Heart_btn:hover {
+    color: #000;
+    background: #f0f1f1;
+}
+
+
+.long_btn {
+    margin-top: 5px;
+    background-color: #91b898;
+    font-size: 12px;
+    height: 50px;
+    border: 0.5px solid #f0f1f1;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 950px) {
+    .long_btn {
+        max-width: 85%;
+        min-width: 68%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .long_btn {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .long_btn {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .long_btn {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    .long_btn {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .long_btn {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .long_btn {
+        width: 75%;
+    }
+}
+
+.long_btn:hover {
+    opacity: 80%;
+}
+
+
+.shop_btn {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 12px;
+    height: 60px;
+    width: 99.5%;
+    border: 1px solid #000;
+    font-size: 17px;
+    color: #464b4f;
+    transition: all .5s;
+}
+
+.shop_btn:hover {
+    background-color: #464b4f;
+    color: #fff;
+}
+
+
+
+.stars_div_all i {
+    color: #949aa1;
+    transition: all .3s;
+}
+
+.stars_div_all .active_star,
+.stars_div_all i:hover {
+    color: #000;
+}
+
+.stars_div_all {
+    color: #222;
+    font-size: 16px;
+}
+
+.speci_h {
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    margin-right: 50px;
+    border-top: 1px solid #f0f1f1;
+    padding-top: 20px;
+}
+
+.specification_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specification {
+    padding: 0px;
+}
+
+.specification li {
+    list-style: none;
+    font-size: 15px;
+    margin-top: 7px;
+    color: #949aa1;
+}
+
+.specification.black_txt li {
+    color: #000;
+}
+
+.chiipng {
+    border-top: 1px solid #f0f1f1;
+    padding-top: 20px;
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.chiipng li {
+    font-size: 14px;
+    color: #949aa1;
+    margin-top: 7px;
+}
+
+.chiipng i {
+    color: #91b899;
+}
+
+.fit_quality h5 {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.fit_quality_text p {
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.ceck h4 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}

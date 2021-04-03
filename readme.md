@@ -10,7 +10,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 1.https://www.w3schools.com/js/js_arrow_function.asp
 
 --- Oud
-1. https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+### HTML
+https://www.w3schools.com/html/html5_semantic_elements.asp
+### CSS
+https://codepen.io/RRoberts/pen/ZBYaJr
+https://codepen.io/wildbeard/pen/eZZPZr
+https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+### JS
+
+<!-- 1. https://css-tricks.com/snippets/css/keyframe-animation-syntax/
 2. https://developer.mozilla.org/en/docs/Web/API/Element/querySelector
 3. https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
 4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -21,7 +29,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 9. https://www.impressivewebs.com/html5-section/
 10. https://www.w3schools.com/js/js_function_parameters.asp
 11. https://www.w3schools.com/cssref/pr_font_weight.asp
-12. https://www.w3schools.com/css/css_boxmodel.asp
+12. https://www.w3schools.com/css/css_boxmodel.asp -->
 
 
 

@@ -18,19 +18,17 @@ mageMenuSection.addEventListener('mouseleave', () => {
 // Mobile Menu
 // variable declaration 
 const mobileMenuSection = document.querySelector('.short_mob')
-const openMobileMenuAction = document.querySelector('#open_btn')
-const closeMobileMenuAction = document.querySelector('#close_btn')
+const mobileMenuAction = document.querySelector('.hamburger')
 // Listening actions and toggling classes the same as NAVBAR
-openMobileMenuAction.addEventListener('click', () => {
-  openMobileMenuAction.style.display = 'none';
-  closeMobileMenuAction.style.display = 'block';
-  mobileMenuSection.style.width = '20em';
+mobileMenuAction.addEventListener('click', () => {
+  if(mobileMenuAction.classList.contains('is-active')){
+    mobileMenuSection.style.width = '0em';
+  }else{
+    mobileMenuSection.style.width = '20em';
+  }
+  mobileMenuAction.classList.toggle("is-active");
 })
-closeMobileMenuAction.addEventListener('click', () => {
-  openMobileMenuAction.style.display = 'block';
-  closeMobileMenuAction.style.display = 'none';
-  mobileMenuSection.style.width = '0';
-})
+
 
 
 // ********** | TEXT SLIDER | **********
@@ -92,27 +90,30 @@ if(mainCardImg1 && mainCardImg2 && mainCardImg3){
 
 // ********** | PRODUCT MOBILE SLIDER | **********
 var slideIndex = 1; // getting 1st slide 
+const productSlides = document.querySelectorAll(".mobile_slider img"); // getting all slides  
 showSlides(slideIndex); // strating function
+//const mobileMenuSection = document.querySelector('.short_mob')
+
 //preparing all slides 
 function showSlides(n) {
   var i;
-  const slides = document.getElementsByClassName("mySlides"); // getting all slides
+
   //var dots = document.getElementsByClassName("dot");
-  if(slides.length<1){return false} // no slides - break function
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; // hide all slides
+  if(productSlides.length<1){return false} // no slides - break function
+  if (n > productSlides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = productSlides.length}
+  for (i = 0; i < productSlides.length; i++) {
+    productSlides[i].style.display = "none"; // hide all slides
   }
   // for (i = 0; i < dots.length; i++) {
   //     dots[i].className = dots[i].className.replace(" active", "");
   // }
-  slides[slideIndex-1].style.display = "block"; // showing one slide (first, next, prev.)
+  productSlides[slideIndex-1].style.display = "block"; // showing one slide (first, next, prev.)
   //dots[slideIndex-1].className += " active";
 }
 
-const prevAction = document.getElementById('prev_action')
-const nextAction = document.getElementById('next_action')
+const prevAction = document.querySelector('.prev')
+const nextAction = document.querySelector('.next')
 
 if(prevAction && nextAction){
   prevAction.addEventListener('click', () => {

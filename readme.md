@@ -16,6 +16,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
 - https://www.toptal.com/designers/htmlarrows/
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
+- https://css-tricks.com/best-way-implement-wrapper-css/
 
 ### CSS
 - https://developer.mozilla.org/en-US/docs/Web/CSS/@charset

@@ -4,27 +4,26 @@
 
 // variable declaration mageMenuAction(Menu Button) and mageMenuSection(Hidded Menu Block)
 // querySelector is equal getElementById and getElementsByClassName
-const mageMenuAction = document.querySelector('#mega_menu_action')
-const mageMenuSection = document.querySelector('.navbar_shop_mega')
-
+const mageMenuAction = document.querySelector("#mega_menu_action")
+const mageMenuSection = document.querySelector(".navbar_shop_mega")
 // Listening actions Mouse Enter and Mouse Leave and toggling CSS class .hidden (add or remove)
-mageMenuAction.addEventListener('mouseenter', () => {
-  mageMenuSection.style.display = 'block'
+mageMenuAction.addEventListener("mouseenter", () => {
+  mageMenuSection.style.display = "block"
 })
-mageMenuSection.addEventListener('mouseleave', () => {
-  mageMenuSection.style.display = 'none'
+mageMenuSection.addEventListener("mouseleave", () => {
+  mageMenuSection.style.display = "none"
 })
 
 // Mobile Menu
 // variable declaration 
-const mobileMenuSection = document.querySelector('.short_mob')
-const mobileMenuAction = document.querySelector('.hamburger')
+const mobileMenuSection = document.querySelector(".short_mob")
+const mobileMenuAction = document.querySelector(".hamburger")
 // Listening actions and toggling classes the same as NAVBAR
-mobileMenuAction.addEventListener('click', () => {
-  if(mobileMenuAction.classList.contains('is-active')){
-    mobileMenuSection.style.width = '0em';
+mobileMenuAction.addEventListener("click", () => {
+  if(mobileMenuAction.classList.contains("is-active")){
+    mobileMenuSection.style.width = "0em";
   }else{
-    mobileMenuSection.style.width = '20em';
+    mobileMenuSection.style.width = "20em";
   }
   mobileMenuAction.classList.toggle("is-active");
 })
@@ -36,7 +35,7 @@ mobileMenuAction.addEventListener('click', () => {
 const width = 100; // 100% slider width 
 const time_val = 5000; // = 5 secons
 const slide_container = document.querySelector("#slider ul"); 
-const slides = document.querySelectorAll('#slider li');
+const slides = document.querySelectorAll("#slider li");
 let current_slide = 0;
 // each Slide changing styles 
 slides.forEach(function(element, index) {
@@ -60,29 +59,29 @@ function imgToggler(img,src) {
        img.src = src;
   }
 }
-const mainCardImg1 = document.querySelector('#main_card_img1')
-const mainCardImg2 = document.querySelector('#main_card_img2')
-const mainCardImg3 = document.querySelector('#main_card_img3')
+const mainCardImg1 = document.querySelector("#main_card_img1")
+const mainCardImg2 = document.querySelector("#main_card_img2")
+const mainCardImg3 = document.querySelector("#main_card_img3")
 // if images existing Listening Acitions Mouse Enter and Mouse Leave same as NAVBAR 
 // on hover change image src (link)
 if(mainCardImg1 && mainCardImg2 && mainCardImg3){
-  mainCardImg1.addEventListener('mouseenter', () => {
-    imgToggler(mainCardImg1,'./assets/images/img06.jpg')
+  mainCardImg1.addEventListener("mouseenter", () => {
+    imgToggler(mainCardImg1,"./assets/images/img06.jpg")
   })
-  mainCardImg1.addEventListener('mouseleave', () => {
-    imgToggler(mainCardImg1,'./assets/images/img04.jpg')
+  mainCardImg1.addEventListener("mouseleave", () => {
+    imgToggler(mainCardImg1,"./assets/images/img04.jpg")
   })
-  mainCardImg2.addEventListener('mouseenter', () => {
-    imgToggler(mainCardImg2,'./assets/images/img08.jpg')
+  mainCardImg2.addEventListener("mouseenter", () => {
+    imgToggler(mainCardImg2,"./assets/images/img08.jpg")
   })
-  mainCardImg2.addEventListener('mouseleave', () => {
-    imgToggler(mainCardImg2,'./assets/images/img07.jpg')
+  mainCardImg2.addEventListener("mouseleave", () => {
+    imgToggler(mainCardImg2,"./assets/images/img07.jpg")
   })
-  mainCardImg3.addEventListener('mouseenter', () => {
-    imgToggler(mainCardImg3,'./assets/images/img10.jpg')
+  mainCardImg3.addEventListener("mouseenter", () => {
+    imgToggler(mainCardImg3,"./assets/images/img10.jpg")
   })
-  mainCardImg3.addEventListener('mouseleave', () => {
-    imgToggler(mainCardImg3,'./assets/images/img09.jpg')
+  mainCardImg3.addEventListener("mouseleave", () => {
+    imgToggler(mainCardImg3,"./assets/images/img09.jpg")
   })
 }
 
@@ -91,13 +90,15 @@ if(mainCardImg1 && mainCardImg2 && mainCardImg3){
 // ********** | PRODUCT MOBILE SLIDER | **********
 var slideIndex = 1; // getting 1st slide 
 const productSlides = document.querySelectorAll(".mobile_slider img"); // getting all slides  
+const prevAction = document.querySelector(".prev")
+const nextAction = document.querySelector(".next")
+
 showSlides(slideIndex); // strating function
-//const mobileMenuSection = document.querySelector('.short_mob')
+//const mobileMenuSection = document.querySelector(".short_mob")
 
 //preparing all slides 
 function showSlides(n) {
   var i;
-
   //var dots = document.getElementsByClassName("dot");
   if(productSlides.length<1){return false} // no slides - break function
   if (n > productSlides.length) {slideIndex = 1}
@@ -112,14 +113,11 @@ function showSlides(n) {
   //dots[slideIndex-1].className += " active";
 }
 
-const prevAction = document.querySelector('.prev')
-const nextAction = document.querySelector('.next')
-
 if(prevAction && nextAction){
-  prevAction.addEventListener('click', () => {
+  prevAction.addEventListener("click", () => {
     showSlides(slideIndex += -1); // call showSlides with Prev. Slide
   })
-  nextAction.addEventListener('click', () => {
+  nextAction.addEventListener("click", () => {
     showSlides(slideIndex += 1); // call showSlides with Next Slide
   })
 }

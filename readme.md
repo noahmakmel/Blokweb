@@ -7,29 +7,47 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 
-1.https://www.w3schools.com/js/js_arrow_function.asp
-
---- Oud
 ### HTML
-https://www.w3schools.com/html/html5_semantic_elements.asp
-### CSS
-https://codepen.io/RRoberts/pen/ZBYaJr
-https://codepen.io/wildbeard/pen/eZZPZr
-https://css-tricks.com/snippets/css/keyframe-animation-syntax/
-### JS
+- https://www.w3schools.com/html/html_intro.asp
+- https://www.w3schools.com/css/css_rwd_viewport.asp
+- https://www.w3schools.com/html/html5_semantic_elements.asp
+- https://www.impressivewebs.com/html5-section/
+- https://www.w3schools.com/html/html_forms.asp
+- https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
+- https://www.toptal.com/designers/htmlarrows/
 
-<!-- 1. https://css-tricks.com/snippets/css/keyframe-animation-syntax/
-2. https://developer.mozilla.org/en/docs/Web/API/Element/querySelector
-3. https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
-4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-5. https://flexbox.io/
-6. https://www.w3schools.com/html/html5_semantic_elements.asp
-7. https://www.impressivewebs.com/html5-section/
-8. https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
-9. https://www.impressivewebs.com/html5-section/
-10. https://www.w3schools.com/js/js_function_parameters.asp
-11. https://www.w3schools.com/cssref/pr_font_weight.asp
-12. https://www.w3schools.com/css/css_boxmodel.asp -->
+### CSS
+- https://developer.mozilla.org/en-US/docs/Web/CSS/@charset
+- https://codepen.io/RRoberts/pen/ZBYaJr
+- https://codepen.io/wildbeard/pen/eZZPZr
+- https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+- https://www.w3schools.com/cssref/css_selectors.asp
+- https://www.w3schools.com/css/css_pseudo_classes.asp
+- https://css-tricks.com/almanac/properties/t/transform/
+- https://css-tricks.com/almanac/properties/t/transition/
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.w3schools.com/css/css_boxmodel.asp
+- https://flexbox.io/
+- https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+- https://dev.to/prashantandani/quick-guide-to-css-units-px-em-rem-4lic
+- https://www.w3schools.com/css/css3_fonts.asp
+- https://css-tricks.com/snippets/css/using-font-face/
+- https://matthewkosloski.me/labs/pixem/
+
+### JavaScript
+- https://www.w3schools.com/js/js_es6.asp
+- https://ui.dev/var-let-const/
+- https://www.w3schools.com/jsref/met_document_queryselector.asp
+- https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+- https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener
+- https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave
+- https://www.w3schools.com/js/js_htmldom_css.asp
+- https://www.kirupa.com/html5/setting_css_styles_using_javascript.htm
+- https://www.w3schools.com/jsref/jsref_foreach.asp
+- https://www.w3schools.com/jsref/met_win_setinterval.asp
+- https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Addition_assignment
+- https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
+- https://www.w3schools.com/js/js_arrow_function.asp
 
 
 

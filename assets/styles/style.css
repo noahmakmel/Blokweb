@@ -34,9 +34,6 @@ body {
     display: none;
 }
 
-.text-center {
-    text-align: center;
-}
 
 a {
     color: #949aa1;
@@ -54,11 +51,11 @@ a:hover {
 
 p {
     color: #949aa1;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .fix_navbar {
-    padding-top: 80px;
+    padding-top: 5em;
 }
 
 /* ********** | NAVBAR | ********** */
@@ -154,7 +151,7 @@ p {
     line-height: 2.15em;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 61.9375em) {
     .nav_main>.container {
         display: none;
     }
@@ -248,6 +245,9 @@ p {
     margin-right: 1.25em;
 }
 
+.nav_main_mob_navbar ul:nth-child(3) li {
+    margin-right: 0;
+}
 
 .nav_main_mob_navbar .container {
     display: flex;
@@ -256,12 +256,12 @@ p {
 }
 
 
-.hamburger .line {
-    width: 14px;
-    height: 1px;
+.hamburger span {
+    width: 0.875em;
+    height: 0.0625em;
     background-color: #070707;
     display: block;
-    margin: 4px auto;
+    margin: 0.25em auto;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -271,22 +271,22 @@ p {
     cursor: pointer;
 }
 
-.hamburger.is-active .line:nth-child(2) {
+.hamburger.is-active span:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.is-active .line:nth-child(1) {
-    -webkit-transform: translateY(5px) rotate(45deg);
-    -ms-transform: translateY(5px) rotate(45deg);
-    -o-transform: translateY(5px) rotate(45deg);
-    transform: translateY(5px) rotate(45deg);
+.hamburger.is-active span:nth-child(1) {
+    -webkit-transform: translateY(0.3125em) rotate(45deg);
+    -ms-transform: translateY(0.3125em) rotate(45deg);
+    -o-transform: translateY(0.3125em) rotate(45deg);
+    transform: translateY(0.3125em) rotate(45deg);
 }
 
-.hamburger.is-active .line:nth-child(3) {
-    -webkit-transform: translateY(-5px) rotate(-45deg);
-    -ms-transform: translateY(-5px) rotate(-45deg);
-    -o-transform: translateY(-5px) rotate(-45deg);
-    transform: translateY(-5px) rotate(-45deg);
+.hamburger.is-active span:nth-child(3) {
+    -webkit-transform: translateY(-0.3125em) rotate(-45deg);
+    -ms-transform: translateY(-0.3125em) rotate(-45deg);
+    -o-transform: translateY(-0.3125em) rotate(-45deg);
+    transform: translateY(-0.3125em) rotate(-45deg);
 }
 
 
@@ -300,9 +300,6 @@ p {
     transition: all .3s;
 }
 
-/* .short_mob.is_open {
-    width: 350px;
-} */
 
 .short_mob ul {
     list-style: none;
@@ -336,7 +333,7 @@ p {
 }
 
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 61.9375em) {
     .nav_main_mob_navbar {
         display: none;
     }
@@ -387,7 +384,7 @@ p {
     right: 10%;
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:61.9375em) {
     .headerHeading {
         right: unset;
         left: 5%;
@@ -629,7 +626,7 @@ p {
     color: #464b4f;
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:61.9375em) {
     .shop_arrivals_main>div ul {
         flex-basis: 100%;
     }
@@ -682,7 +679,7 @@ p {
 
 
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:61.9375em) {
     .product-grid {
         margin-bottom: 1.875em
     }
@@ -743,7 +740,7 @@ footer nav p {
     color: rgb(231, 77, 101);
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:61.9375em) {
     footer nav {
         flex-wrap: wrap;
     }
@@ -794,7 +791,7 @@ footer nav p {
     color: #000;
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:61.9375em) {
     .last_footer .container>div {
         text-align: center;
         margin-bottom: 1.5em;
@@ -814,8 +811,15 @@ footer nav p {
     src: local('Gordita Regular'), url('../fonts/Gordita Regular.woff') format('woff');
 }
 
-
 @font-face {
+    font-family: 'Gordita Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gordita Bold'), url('../fonts/Gordita Bold.woff') format('woff');
+}
+
+
+/* @font-face {
     font-family: 'Gordita Regular Italic';
     font-style: normal;
     font-weight: normal;
@@ -868,18 +872,10 @@ footer nav p {
     font-style: normal;
     font-weight: normal;
     src: local('Gordita Medium Italic'), url('../fonts/Gordita Medium Italic.woff') format('woff');
-}
+} */
 
 
-@font-face {
-    font-family: 'Gordita Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gordita Bold'), url('../fonts/Gordita Bold.woff') format('woff');
-}
-
-
-@font-face {
+/* @font-face {
     font-family: 'Gordita Bold Italic';
     font-style: normal;
     font-weight: normal;
@@ -916,4 +912,4 @@ footer nav p {
     font-style: normal;
     font-weight: normal;
     src: local('Gordita Ultra Italic'), url('../fonts/Gordita Ultra Italic.woff') format('woff');
-}
+} */

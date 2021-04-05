@@ -715,6 +715,7 @@ footer nav>div {
 }
 
 footer nav div:first-child {
+    /* https://www.youtube.com/watch?v=UxHFB5_CSXc */
     justify-content: space-around;
     flex-direction: row;
 }

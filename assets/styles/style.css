@@ -403,6 +403,10 @@ header .container>div span {
 @media only screen and (max-width:61.9375em) {
     .hero>div {
         right: unset;
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/unset
+        
+        The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In other words, it behaves like the inherit keyword in the first case, when the property is an inherited property, and like the initial keyword in the second case, when the property is a non-inherited property.
+unset can be applied to any CSS property, including the CSS shorthand all. */
         left: 5%;
     }
 }

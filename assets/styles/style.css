@@ -35,7 +35,6 @@ body {
     display: none;
 }
 
-
 a {
     color: #949aa1;
     text-decoration: none;
@@ -49,12 +48,16 @@ a:hover {
     color: #000;
 }
 
-
 p {
     color: #949aa1;
     font-size: 0.875em;
 }
 
+@media screen and (max-width: 61.9375em) {
+    body {
+        padding-top: 4.375em;
+    }
+}
 
 
 /* ********** | NAVBAR | ********** */
@@ -380,37 +383,37 @@ header .container>div span {
     position: relative;
 }
 
-.headerHeading {
+.hero>div {
     position: absolute;
     top: 25%;
     right: 10%;
 }
 
 @media only screen and (max-width:61.9375em) {
-    .headerHeading {
+    .hero>div {
         right: unset;
         left: 5%;
     }
 }
 
 
-.headerHeading h3 {
+.hero>div h3 {
     color: #fff;
     font-size: 3.125em;
     margin-bottom: 0.625em;
     font-weight: 300;
     width: 100%;
-    max-width: 380px;
+    max-width: 23.75em;
 }
 
-.headerHeading p {
+.hero>div p {
     color: #fff;
     font-size: 1.25em;
     margin-top: 0;
     font-weight: 300;
 }
 
-.headerHeading a {
+.hero>div a {
     margin-top: 2.5em;
     font-size: 1.25em;
     padding: 0.625em 1.5625em;
@@ -421,7 +424,7 @@ header .container>div span {
     line-height: 1.5em;
 }
 
-.headerHeading a:hover {
+.hero>div a:hover {
     background-color: #ebebeb;
     left: 0;
 }
@@ -438,36 +441,36 @@ header .container>div span {
     text-align: center;
 }
 
-.newshow {
+.main_show .container>div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.newshow>div {
+.main_show .container>div article {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.newshow img {
+.main_show .container>div img {
     width: 100%;
     max-width: 40em;
 }
 
-.newshow h4 {
+.main_show .container>div h4 {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 0;
 }
 
-.newshow p {
+.main_show .container>div p {
     color: #949aa1;
     text-align: center;
     font-size: 1em;
 }
 
-.newshow a {
+.main_show .container>div a {
     display: block;
     font-size: 1em;
     padding: 1em 1.5em;
@@ -475,12 +478,12 @@ header .container>div span {
     margin-bottom: 4em;
 }
 
-.newshow a:hover {
+.main_show .container>div a:hover {
     left: 0;
     border: 0.0313em solid #464b4f;
 }
 
-.extra_img {
+.main_show div:nth-of-type(2) {
     background: url('../images/asset-10.jpeg') top center no-repeat;
     background-size: cover;
     width: 100%;
@@ -488,44 +491,44 @@ header .container>div span {
 }
 
 /* ********** | PRODUCT SECTION | ********** */
-.product_sec {
+.main_show div:nth-of-type(3) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 6.25em;
 }
 
-.product_sec>a {
+.main_show div:nth-of-type(3)>a {
     width: 16.25em;
     margin-bottom: 1.25em;
     display: block;
 }
 
-.product_sec>a:hover {
+.main_show div:nth-of-type(3)>a:hover {
     left: 0;
 }
 
-.product_sec p {
+.main_show div:nth-of-type(3) p {
     font-size: 0.875em;
     margin-top: 0;
     color: #464b4f;
 }
 
-.product_sec p span {
+.main_show div:nth-of-type(3) p span {
     display: inline-block;
     margin-left: 0.8125em;
     color: #949aa1;
     font-size: 0.8125em;
 }
 
-.product_sec img {
+.main_show div:nth-of-type(3) img {
     width: 16em;
     margin-bottom: 0.8125em;
 }
 
 
 /* ********** | SUBSCRIBE SECTION | **********  */
-.subscribe {
+.main_show div:nth-of-type(4) {
     margin-top: 6.25em;
     background: url('../images/img11.jpg') center top no-repeat;
     background-size: cover;
@@ -537,7 +540,7 @@ header .container>div span {
     margin-bottom: 3em;
 }
 
-.subscribe>div {
+.main_show div:nth-of-type(4)>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -545,7 +548,7 @@ header .container>div span {
     padding-bottom: 10%;
 }
 
-.subscribe h2 {
+.main_show div:nth-of-type(4) h2 {
     font-size: 3.4375em;
     color: #fff;
     font-weight: 300;
@@ -553,7 +556,7 @@ header .container>div span {
     text-align: center;
 }
 
-.subscribe p {
+.main_show div:nth-of-type(4) p {
     font-size: 1.25em;
     margin-top: 1.25em;
     color: #ffffff;
@@ -561,13 +564,13 @@ header .container>div span {
     text-align: center;
 }
 
-.subscribe form {
+.main_show div:nth-of-type(4) form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.subscribe input {
+.main_show div:nth-of-type(4) input {
     min-width: 12.5em;
     max-width: 20%;
     height: 3.875em;
@@ -577,7 +580,7 @@ header .container>div span {
     font-weight: 300;
 }
 
-.subscribe button {
+.main_show div:nth-of-type(4) button {
     background-color: #91b898;
     margin-left: -0.3125em;
     min-width: 6.25em;
@@ -598,76 +601,75 @@ header .container>div span {
     padding-bottom: 2em;
 }
 
-.shop_arrivals_main,
-.pic_arrivals_main {
+.before_footer>div {
     flex: 1 0 50%;
 }
 
-.shop_arrivals_main h3,
-.pic_arrivals_main h3 {
+.before_footer h3 {
     font-size: 1.5em;
     font-weight: 300;
     margin: 0 0 1em 0;
 }
 
-.shop_arrivals_main>div {
+.before_footer>div div {
     display: flex;
     flex-wrap: wrap;
 }
 
-.shop_arrivals_main>div ul {
+.before_footer>div div ul {
     margin: 0;
     padding: 0;
     flex-basis: 33%;
     list-style: none;
 }
 
-.shop_arrivals_main>div ul a {
+.before_footer>div div ul a {
     margin-top: 1em;
     display: block;
     color: #464b4f;
 }
 
 @media only screen and (max-width:61.9375em) {
-    .shop_arrivals_main>div ul {
+    .before_footer>div div ul {
         flex-basis: 100%;
     }
 }
 
 
 /* New Items */
-.pic_arrivals_main>div {
+
+.before_footer div:nth-of-type(2)>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.pic_arrivals_main a:hover {
+.before_footer div:nth-of-type(2) a:hover {
     left: 0;
 }
 
-.pic_arrivals_main a {
+.before_footer div:nth-of-type(2) a {
     display: block;
     width: 12.5em;
     position: relative
 }
 
-.pic_arrivals_main a img {
+.before_footer div:nth-of-type(2) a img {
     width: 100%;
     height: auto
 }
 
 /* Hover Animation */
-.pic_arrivals_main a .pic-1 {
+.before_footer div:nth-of-type(2) a .pic-1 {
     opacity: 1;
     transition: all .5s ease-out 0s
 }
 
-.pic_arrivals_main a:hover .pic-1 {
+.before_footer div:nth-of-type(2) a:hover .pic-1 {
     opacity: 0
 }
 
-.pic_arrivals_main a .pic-2 {
+.before_footer div:nth-of-type(2) a .pic-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -675,7 +677,7 @@ header .container>div span {
     transition: all .5s ease-out 0s
 }
 
-.pic_arrivals_main a:hover .pic-2 {
+.before_footer div:nth-of-type(2) a:hover .pic-2 {
     opacity: 1
 }
 
@@ -831,7 +833,7 @@ footer>section .container>ul a:hover {
 /* ********** | Mobile Slider | ********** */
 .mobile_slider {
     display: none;
-    margin: 0 auto 40px;
+    margin: 0 auto 2.5em;
 }
 
 .mobile_slider div {
@@ -960,6 +962,7 @@ aside h3 {
 }
 
 /* design_head */
+
 .design_head {
     border-bottom: 0.0625em solid #f0f1f1;
     padding-bottom: 1.5em;
@@ -1182,7 +1185,7 @@ aside h3 {
 }
 
 .stars_div svg {
-    margin-right: 5px;
+    margin-right: 0.3em;
 }
 
 /* specification_main */
@@ -1278,7 +1281,7 @@ aside h3 {
 
 .subscribe_small li svg {
     position: relative;
-    top: 3px
+    top: 0.1875em;
 }
 
 .subscribe_small form {

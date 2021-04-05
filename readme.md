@@ -41,6 +41,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -  https://github.com/necolas/normalize.css/blob/master/normalize.css
 -  https://www.w3schools.com/cssref/sel_element_gt.asp
 -   https://developer.mozilla.org/en-US/docs/Web/CSS/unset
+-   https://www.youtube.com/watch?v=KIIktcWu6hc (nth child)
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp

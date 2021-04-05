@@ -39,6 +39,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
 -  https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
 -  https://github.com/necolas/normalize.css/blob/master/normalize.css
+-  https://www.w3schools.com/cssref/sel_element_gt.asp
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp

@@ -11,7 +11,13 @@
     outline: 0;
 }
 
-html {
+html { /* 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+    https://github.com/necolas/normalize.css/blob/master/normalize.css
+    
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in iOS.   
+*/
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
@@ -67,6 +73,7 @@ header {
     width: 100%;
     left: 0;
     z-index: 2;
+    /* ********** | https://developer.mozilla.org/en-US/docs/Web/CSS/z-index| ********** */
     background-color: #fff;
 }
 

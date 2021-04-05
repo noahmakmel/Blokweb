@@ -42,6 +42,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -  https://www.w3schools.com/cssref/sel_element_gt.asp
 -   https://developer.mozilla.org/en-US/docs/Web/CSS/unset
 -   https://www.youtube.com/watch?v=KIIktcWu6hc (nth child)
+-   https://www.youtube.com/watch?v=4NsJtaaC0qI (first of type & nth type)
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp

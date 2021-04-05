@@ -36,6 +36,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - https://www.w3schools.com/css/css3_fonts.asp
 - https://css-tricks.com/snippets/css/using-font-face/
 - https://matthewkosloski.me/labs/pixem/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp

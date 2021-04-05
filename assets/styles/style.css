@@ -78,6 +78,10 @@ header {
 }
 
 header>.container {
+    /* https://www.w3schools.com/cssref/sel_element_gt.aspt
+    E.g. Select and style every <p> element where the parent is a <div> element:
+    */
+    
     display: flex;
     justify-content: space-between;
     padding-top: 0.9375em;

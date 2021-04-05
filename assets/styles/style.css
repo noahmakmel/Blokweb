@@ -73,7 +73,7 @@ header {
     width: 100%;
     left: 0;
     z-index: 2;
-    /* ********** | https://developer.mozilla.org/en-US/docs/Web/CSS/z-index| ********** */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/z-index| */
     background-color: #fff;
 }
 
@@ -208,10 +208,16 @@ header .container>div span {
     flex-grow: 2;
 }
 
+/* Styling the last ul inside of the div "container" (the images)
+https://www.youtube.com/watch?v=4NsJtaaC0qI 
+*/
 .navbar_shop_mega nav div ul:last-child {
     padding-right: 15%;
 }
 
+/* Styling for div menu items in the nav (second div of parent)
+https://www.youtube.com/watch?v=4NsJtaaC0qI 
+*/
 .navbar_shop_mega nav div:nth-child(2) {
     flex-grow: 1;
 }
@@ -229,6 +235,10 @@ header .container>div span {
 .navbar_shop_mega nav a {
     font-size: 0.875em;
 }
+
+/* Styling for the second div of the parent ul 
+https://www.youtube.com/watch?v=4NsJtaaC0qI 
+*/
 
 .navbar_shop_mega nav div:nth-child(2) ul {
     display: flex;
@@ -272,7 +282,9 @@ header .container>div span {
     align-items: center;
 }
 
-
+/* Hamburger animation
+https://codepen.io/RRoberts/pen/ZBYaJr 
+*/
 .hamburger span {
     width: 0.875em;
     height: 0.0625em;
@@ -287,7 +299,8 @@ header .container>div span {
 .hamburger:hover {
     cursor: pointer;
 }
-
+/* The .is-active is added by Javascript
+*/
 .hamburger.is-active span:nth-child(2) {
     opacity: 0;
 }
@@ -311,6 +324,7 @@ header .container>div span {
 .short_mob {
     width: 0;
     overflow-y: scroll;
+	/* https://www.w3schools.com/cssref/css3_pr_overflow-y.asp */
     height: 92vh;
     position: fixed;
     background-color: #fff;
@@ -421,7 +435,9 @@ unset can be applied to any CSS property, including the CSS shorthand all. */
     max-width: 23.75em;
 }
 
-.hero>div p {
+.hero>div p
+/* Could also be .hero p */
+{
     color: #fff;
     font-size: 1.25em;
     margin-top: 0;
@@ -734,7 +750,8 @@ footer nav div:first-child img {
     margin-right: .75em;
 }
 
-footer nav div:first-child>div {
+footer nav div:first-child>div
+/* same as footer nav div:first-child div ... all divs from first child */{
     flex: 1 0 50%;
 }
 
@@ -994,6 +1011,7 @@ aside h3 {
 }
 
 /* colors_selector */
+/*https://codepen.io/wildbeard/pen/eZZPZr */
 .colors_selector span {
     color: #000;
 }

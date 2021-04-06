@@ -80,6 +80,9 @@ const mainCardImg2 = document.querySelector("#main_card_img2")
 const mainCardImg3 = document.querySelector("#main_card_img3")
 // if images existing Listening Acitions Mouse Enter and Mouse Leave same as NAVBAR 
 // on hover change image src (link)
+// https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave
+// https://www.youtube.com/watch?v=SGKXZUGe2sw (change image src)
+// https://www.youtube.com/watch?v=Mku-RJ3FpFc (change image src)
 if(mainCardImg1 && mainCardImg2 && mainCardImg3){
   mainCardImg1.addEventListener("mouseenter", () => {
     imgToggler(mainCardImg1,"./assets/images/img06.jpg")
@@ -104,12 +107,15 @@ if(mainCardImg1 && mainCardImg2 && mainCardImg3){
 
 
 // ********** | PRODUCT MOBILE SLIDER | **********
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
+// https://toolset.com/forums/topic/slideshow-using-w3-css-slideshow/
+// https://www.c-sharpcorner.com/article/creating-an-image-slider-using-javascript-html-and-css-only/
 var slideIndex = 1; // getting 1st slide 
 const productSlides = document.querySelectorAll(".mobile_slider img"); // getting all slides  
 const prevAction = document.querySelector(".prev")
 const nextAction = document.querySelector(".next")
 
-showSlides(slideIndex); // strating function
+showSlides(slideIndex); // starting function
 //const mobileMenuSection = document.querySelector(".short_mob")
 
 //preparing all slides 

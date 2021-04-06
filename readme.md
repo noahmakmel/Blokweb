@@ -60,6 +60,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - https://developers.google.com/web/updates/2015/01/ES6-Template-Strings
 - https://www.w3schools.com/js/js_arrow_function.asp
 - https://github.com/emdubb/jQuery_carousel_tutorial
+- https://www.youtube.com/watch?v=h33Srr5J9nY (arrow function)
 
 
 

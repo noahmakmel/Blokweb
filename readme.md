@@ -42,6 +42,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -   https://www.youtube.com/watch?v=4NsJtaaC0qI (first of type & nth type)
 -   https://www.w3schools.com/cssref/css3_pr_overflow-y.asp
 -   https://css-tricks.com/best-way-implement-wrapper-css/
+-   https://www.w3schools.com/howto/howto_js_slideshow.asp
+-  https://toolset.com/forums/topic/slideshow-using-w3-css-slideshow/
+-   https://www.c-sharpcorner.com/article/creating-an-image-slider-using-javascript-html-and-css-only/
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp

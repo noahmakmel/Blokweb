@@ -59,6 +59,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - https://www.w3schools.com/js/js_arrow_function.asp
 - https://github.com/emdubb/jQuery_carousel_tutorial
 - https://www.youtube.com/watch?v=h33Srr5J9nY (arrow function)
+- https://www.youtube.com/watch?v=SGKXZUGe2sw (change img src)
 
 
 

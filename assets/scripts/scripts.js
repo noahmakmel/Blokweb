@@ -1,4 +1,10 @@
 // JavaScript Document
+//General notes:
+// https://www.youtube.com/watch?v=XgSjoHgy3Rk
+// Var => function-scoped variables
+//Let, const => block-scoped variables 
+//Let global variable is not attached to window  objects. If you declare a global variable using var there is a case where the variable could be overwritten  Const is for a instant that never change, like PI. You can’t override it
+// Arrow function : Parameter=> function { function syntax} (https://www.youtube.com/watch?v=h33Srr5J9nY)
 
 // ********** | NAVBAR | **********
 
@@ -7,9 +13,14 @@
 const mageMenuAction = document.querySelector("#mega_menu_action")
 const mageMenuSection = document.querySelector(".navbar_shop_mega")
 // Listening actions Mouse Enter and Mouse Leave and toggling CSS class .hidden (add or remove)
+// https://www.w3schools.com/js/js_arrow_function.aspe Shortcut to not have to return
 mageMenuAction.addEventListener("mouseenter", () => {
   mageMenuSection.style.display = "block"
+	//	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+	// https://www.w3schools.com/cssref/pr_class_display.asp
 })
+
+// hide megamenu on mouseleave
 mageMenuSection.addEventListener("mouseleave", () => {
   mageMenuSection.style.display = "none"
 })
@@ -18,7 +29,8 @@ mageMenuSection.addEventListener("mouseleave", () => {
 // variable declaration 
 const mobileMenuSection = document.querySelector(".short_mob")
 const mobileMenuAction = document.querySelector(".hamburger")
-// Listening actions and toggling classes the same as NAVBAR
+// Listening actions and toggling to add the class "is-active"
+// https://codepen.io/RRoberts/pen/ZBYaJr 
 mobileMenuAction.addEventListener("click", () => {
   if(mobileMenuAction.classList.contains("is-active")){
     mobileMenuSection.style.width = "0em";
@@ -32,14 +44,18 @@ mobileMenuAction.addEventListener("click", () => {
 
 // ********** | TEXT SLIDER | **********
 // variable declaration 
+// https://github.com/emdubb/jQuery_carousel_tutorial
+// The slides are basicly a long rectangle and we're moving the "viewport" of the browser specificly to this part. Slide 1 is 100%, Slide 2 200% etc
+// We want our slideshow to automatically run on an interval so we will use JavaScripts .setInterval() method. We want our slides to change every 5 seconds, so after the callback function we will set the duration to '5000
+//Now that we have the slide, we want to move it to the left. We want to move it the full width of itself. Since we are making a responsive carousel we don't know exactly the width of the slide, so every time we run the interval we want to get the slides current width. We will do this with jQuery's .width() method.
 const width = 100; // 100% slider width 
-const time_val = 5000; // = 5 secons
+const time_val = 5000; // = 5 seconds
 const slide_container = document.querySelector("#slider ul"); 
 const slides = document.querySelectorAll("#slider li");
 let current_slide = 0;
 // each Slide changing styles 
 slides.forEach(function(element, index) {
-    element.style.left = `${index*100}%`
+    element.style.left = `${index*100}%`  // collect all slides
 });
 // every 5 seconds the next slide moves
 const interval = setInterval(function() {

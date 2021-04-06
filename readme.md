@@ -8,15 +8,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 
 ### HTML
-- https://www.w3schools.com/html/html_intro.asp
 - https://www.w3schools.com/css/css_rwd_viewport.asp
-- https://www.w3schools.com/html/html5_semantic_elements.asp
 - https://www.impressivewebs.com/html5-section/
 - https://www.w3schools.com/html/html_forms.asp
 - https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number
 - https://www.toptal.com/designers/htmlarrows/
 - https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute
-- https://css-tricks.com/best-way-implement-wrapper-css/
 - https://www.w3schools.com/tags/tag_aside.asp
 
 ### CSS
@@ -44,6 +41,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -   https://www.youtube.com/watch?v=KIIktcWu6hc (nth child)
 -   https://www.youtube.com/watch?v=4NsJtaaC0qI (first of type & nth type)
 -   https://www.w3schools.com/cssref/css3_pr_overflow-y.asp
+-   https://css-tricks.com/best-way-implement-wrapper-css/
 
 ### JavaScript
 - https://www.w3schools.com/js/js_es6.asp
